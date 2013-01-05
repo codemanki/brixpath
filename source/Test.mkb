@@ -1,0 +1,13 @@
+files
+{
+	(.)
+	MainTest.cpp	
+}
+
+subprojects
+{
+	../brixpath.mkb
+	TUT
+}	
+
+includepath .

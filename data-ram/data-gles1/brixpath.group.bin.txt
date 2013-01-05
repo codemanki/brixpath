@@ -1,0 +1,39 @@
+ResGroupResources:
+	CIwTexture (0x3521f539)
+		"3px" (0xb879ac0)
+		Size: 40036
+	CIwTexture (0x3521f539)
+		"logo" (0x7c9a2e56)
+		Size: 224036
+	CIwTexture (0x3521f539)
+		"helpScene" (0x1cfdf5c)
+		Size: 400036
+	ResList 'CIwTexture' pos:39 size:664118
+
+	CIwGxFontTTFont (0xc084661d)
+		"04B" (0xb87862b)
+		Size: 19570
+	ResList 'CIwGxFontTTFont' pos:664157 size:19580
+
+	CIwGxFont (0xa68776be)
+		"04B_8" (0xb81c962)
+		Size: 31
+	CIwGxFont (0xa68776be)
+		"04B_12" (0x7bbaf4ed)
+		Size: 31
+	CIwGxFont (0xa68776be)
+		"04B_14" (0x7bbaf4ef)
+		Size: 31
+	CIwGxFont (0xa68776be)
+		"04B_16" (0x7bbaf4f1)
+		Size: 31
+	CIwGxFont (0xa68776be)
+		"04B_20" (0x7bbaf50c)
+		Size: 31
+	CIwGxFont (0xa68776be)
+		"04B_24" (0x7bbaf510)
+		Size: 31
+	ResList 'CIwGxFont' pos:683737 size:196
+
+ResGroupResources: Wrote 683898 bytes to CIwResGroup "BrixPath"
+

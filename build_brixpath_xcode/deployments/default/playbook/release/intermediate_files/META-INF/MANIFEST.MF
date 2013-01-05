@@ -1,0 +1,45 @@
+Archive-Manifest-Version: 1.1
+Archive-Created-By: BlackBerry Tablet OS BAR Packager 1.0.2
+
+Package-Type: application
+Package-Author: OGames
+Package-Author-Id: gYAAgFre9ZSmzOiPUomMtAKofug
+Package-Name: com.mycompany.brixpath
+Package-Id: b21wYW55LmJyaXhwYXRoICAgICA
+Package-Version: 0.0.1.0
+Package-Version-Id: MC4wLjEuMCAgICAgICAgICAgICA
+Package-Architecture: armle-v7
+
+Application-Name: brixpath
+Application-Id: Y29tLm15Y29tcGFueS5icml4cGE
+Application-Description: brixpath
+Application-Version: 0.0.1.0
+Application-Version-Id: MC4wLjEuMCAgICAgICAgICAgICA
+Application-Category: core.games
+Application-Requires-System: Tablet OS/1.0.0.0
+Application-Development-Mode: true
+
+Entry-Point-Name: brixpath
+Entry-Point: app/native/brixpath
+Entry-Point-Type: Qnx/Elf
+Entry-Point-Icon: native/icon.png
+Entry-Point-System-Actions: run_native
+Entry-Point-Orientation: auto
+
+Archive-Asset-Name: native/blackberry-tablet.xml
+Archive-Asset-SHA-512-Digest: 4/E0M04ee9X96QJWwg8Ql5qSygIktT4G7kk2ul1Cra12o3H7xjqjANOaS+J94vZ6WbrETjLFC+kF9brSyR5qug
+
+Archive-Asset-Name: native/brixpath
+Archive-Asset-SHA-512-Digest: 2LerBLdydBJQyNrSZGqznslEpTjKKdhiqKQiU9CmxK4hdOxG+euyFEl0ueKNvGCjqINE6NPz7qvUeuRO9FCT4A
+
+Archive-Asset-Name: native/brixpath.group.bin
+Archive-Asset-SHA-512-Digest: 2/Lws0fI10LG1ij5ihkQ/c6gIt6jwhj0Q1T2VL8PDhRGBPHje2DoKM6xPirV7+dL6VuxbwfQlSWCk0qeqIoBig
+
+Archive-Asset-Name: native/brixpath.s3e
+Archive-Asset-SHA-512-Digest: 5/YAuX+kAS/1X/xEbBzTXLkz7RR64ImdQwzh3ZR+zp3TrHOlHrZQyntfDljfk4sY/k7xYO23gcpPTy3XnSBbnA
+
+Archive-Asset-Name: native/icon.png
+Archive-Asset-SHA-512-Digest: +rKLW2P/AZrMDAMwHIKM1m1Nbuo6Vz1CuFU1XeNECYJ6AuZMgGwkY9n/y2phnD49UYXF+F2vqkWzn5usohgmFA
+
+Archive-Asset-Name: native/test.json
+Archive-Asset-SHA-512-Digest: JHgjRaIHlGLl8q4+7HflHD/x9gl/eP+Df9OlWm+nS7MCneD2o9z4SFwqKWf0Ur/zUPQMS3IBmIhDPnOn2lZhgw

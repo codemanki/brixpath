@@ -1,0 +1,12 @@
+.show-grid [class*="span"] {
+    background-color: #EEEEEE;
+    border-radius: 3px 3px 3px 3px;
+    line-height: 40px;
+    min-height: 40px;
+    text-align: center;
+}
+.show-grid {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+select {width:50px;}

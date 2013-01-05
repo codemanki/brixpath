@@ -1,0 +1,98 @@
+#!/usr/bin/env mkb
+options
+{
+    strict
+}
+# Defines
+defines
+{
+	IW_GXFONT_TTF
+}
+debug_defines
+{
+IW_USE_CALLSTACK
+}
+files
+{
+	[Source]
+	(source)
+	main.h
+	main.cpp
+	#Touch library
+	CInput.h
+	CInput.cpp
+	
+	mainmenu.h
+	mainmenu.cpp
+	logger.h
+	logger.cpp
+	common.h
+	fontmanager.h
+	fontmanager.cpp
+	font.h
+	font.cpp
+	#scenes
+	scene.h
+	scene.cpp
+	demoscene.h
+	demoscene.cpp
+	board.h
+	board.cpp
+	boardhelper.h
+	boardhelper.cpp
+	boardcell.h
+	boardcell.cpp
+	colormanager.h
+	colormanager.cpp
+	levelsmanager.h
+	levelsmanager.cpp
+	gamestatemanager.cpp
+	gamestatemanager.h
+	levelchoosescene.h
+	levelchoosescene.cpp
+	settingsscene.h
+	settingsscene.cpp
+	levelbutton.h
+	levelbutton.cpp
+	actionbutton.h
+	actionbutton.cpp
+	helpscene.cpp
+	helpscene.h
+	dialog.h
+	dialog.cpp
+	parson.h
+	parson.c
+	
+	[Data]
+	(data)
+	brixpath.group
+}
+
+assets
+{
+	(data)
+	test.json
+	
+	(data-ram/data-gles1, data)
+	brixpath.group.bin
+}
+subprojects
+{
+	iwgx
+	iw2d
+	iwresmanager
+	iwgxfont
+}
+
+#### AUTO GENERATED deployment settings from DeployTool.exe. Do not edit below this line ####
+deployments
+{
+	["Default"]
+	assets='Default'
+	icon='data/resources/480.png'
+	playbook-author='OGames'
+	playbook-authorid='gYAAgFre9ZSmzOiPUomMtAKofug'
+	version-major=1
+	version-minor=1
+	version-revision=3
+}

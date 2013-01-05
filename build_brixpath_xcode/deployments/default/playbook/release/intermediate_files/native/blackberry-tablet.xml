@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<qnx>
+    <id>com.mycompany.brixpath</id>
+    <filename>brixpath</filename>
+    <name>brixpath</name>
+    <author>OGames</author>
+    <authorId>gYAAgFre9ZSmzOiPUomMtAKofug</authorId>
+    <versionNumber>0.0.1</versionNumber>
+    <versionLabel>0.0.1</versionLabel>
+    <initialWindow>
+        <systemChrome>none</systemChrome>
+        <transparent>false</transparent>
+        <autoOrients>true</autoOrients>
+    </initialWindow>
+    <publisher>MyCompany</publisher>
+    <permission system="true">run_native</permission>
+    <category>core.games</category>
+    <icon>
+        <image>icon.png</image>
+    </icon>
+</qnx>

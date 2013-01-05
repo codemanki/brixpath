@@ -1,0 +1,51 @@
+CIwResGroup
+{
+    name "BrixPath"
+    "resources/3px.png"
+    "resources/logo.png"
+    "resources/helpScene.png"
+    
+	CIwGxFont
+	{
+		name "04B_8"
+
+		ttf ".\resources\04B.ttf"
+		ttfPointSize 8
+	}
+    CIwGxFont
+	{
+		name "04B_12"
+
+		ttf ".\resources\04B.ttf"
+		ttfPointSize 12
+	}
+    CIwGxFont
+	{
+		name "04B_14"
+
+		ttf ".\resources\04B.ttf"
+		ttfPointSize 14
+	}
+    CIwGxFont
+	{
+		name "04B_16"
+
+		ttf ".\resources\04B.ttf"
+		ttfPointSize 16
+	}
+    CIwGxFont
+	{
+		name "04B_20"
+
+		ttf ".\resources\04B.ttf"
+		ttfPointSize 20
+	}
+    
+    CIwGxFont
+	{
+		name "04B_24"
+
+		ttf ".\resources\04B.ttf"
+		ttfPointSize 24
+	}
+}

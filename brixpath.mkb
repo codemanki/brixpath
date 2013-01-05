@@ -1,0 +1,108 @@
+#!/usr/bin/env mkb
+options
+{
+    strict
+}
+# Defines
+defines
+{
+	IW_GXFONT_TTF
+}
+debug_defines
+{
+IW_USE_CALLSTACK
+}
+files
+{
+	[Main]
+	(source/Main)
+	main.cpp
+	brixpath.h
+	brixpath.cpp
+	common.h
+	
+	[Board]
+	(source/Board)
+	board.h
+	board.cpp
+	boardhelper.h
+	boardhelper.cpp
+	boardcell.h
+	boardcell.cpp
+	
+	[Managers]
+	(source/Managers)
+	fontmanager.h
+	fontmanager.cpp
+	colormanager.h
+	colormanager.cpp
+	levelsmanager.h
+	levelsmanager.cpp
+	gamestatemanager.cpp
+	gamestatemanager.h
+	scenesmanager.cpp
+	scenesmanager.h
+	
+	[Scenes]
+	(source/Scenes)
+	scene.h
+	scene.cpp
+	boardscene.h
+	boardscene.cpp
+	levelchoosescene.h
+	levelchoosescene.cpp
+	settingsscene.h
+	settingsscene.cpp
+	helpscene.cpp
+	helpscene.h
+	mainmenu.h
+	mainmenu.cpp
+	
+	
+	[Libs]
+	(source/Libs)
+	CInput.h
+	CInput.cpp
+	parson.h
+	parson.c
+	
+	[Visual]
+	(source/Visual)
+	levelbutton.h
+	levelbutton.cpp
+	actionbutton.h
+	actionbutton.cpp
+	dialog.h
+	dialog.cpp
+	font.h
+	font.cpp
+	
+	[Data]
+	(data)
+	brixpath.group
+}
+
+assets
+{
+	(data)
+	test.json
+	
+	(data-ram/data-gles1, data)
+	brixpath.group.bin
+}
+subprojects
+{
+	iwgx
+	iw2d
+	iwresmanager
+	iwgxfont
+}
+
+#### AUTO GENERATED deployment settings from DeployTool.exe. Do not edit below this line ####
+deployments
+{
+	["Default"]
+	assets='Default'
+	playbook-author='OGames'
+	playbook-authorid='gYAAgFre9ZSmzOiPUomMtAKofug'
+}

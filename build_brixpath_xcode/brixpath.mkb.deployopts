@@ -1,0 +1,9 @@
+build "ARM GCC Release"
+outdir "/Users/codemanki/projects/blackberry/brixpath/build_brixpath_xcode"
+!task !name "Default:playbook" "Package and Install"
+!task hostname "192.168.1.101"
+!task loader "Default"
+!task password "13560"
+!config !name "Default"
+!config <os> "win32" "playbook"
+configlist "Default",

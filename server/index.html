@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Default Page Title</title>
+  
+  <link rel="stylesheet" type="text/css" href="static/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="static/styles.css">
+  <script type="text/javascript" src="static/jquery.js"></script>
+  <script type="text/javascript" src="static/knockout.js"></script>
+  <script type="text/javascript" src="static/bootstrap.js"></script>
+  <script type="text/javascript" src="static/editor.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+    	<div class="row-fluid">
+    		<div class="span2 well">
+    			<h2>Levels</h2>
+				<div data-bind="template:{name:'levels-list'}" style="width: 180px;"></div>
+    		</div>
+    		<div class="span10">
+    			<div data-bind="template:{name:'editor'}"></div>
+    		</div>
+    	</div>
+		<textarea style="width: 1000px;height:100px;"data-bind="value:ko.toJSON(activeLevel())"></textarea>
+    </div>
+</body>
+
+<script type="text/html" id="levels-list">
+	<button class="btn btn-success" type="button" data-bind="click: addLevel" style="display:inline-block;">Add level</button>
+	<button class="btn btn-danger" type="button" data-bind="click: saveChanges" style="display:inline-block;">Save changes</button>
+	<ul data-bind="foreach: levels">
+		<li><span data-bind="html: $parent.levelText($data)"/> <button class="btn btn-link" data-bind="click: function(){$parent.activeLevel($data);}" type="button">Edit</button> </li>
+	</ul>
+</script>
+
+<script type="text/html" id="editor">
+	<h2>Editing Level: <span data-bind="text: activeLevel().id"/></h2> <select data-bind="options: possibleSizes, value:activeLevel().rows"/>x<select data-bind="options: possibleSizes, value:activeLevel().columns"/>
+	<input type="text" data-bind="value:activeLevel().comment"/>
+	<div class="grid">
+	<!-- ko foreach: ko.utils.range(1, $root.activeLevel().rows) -->
+		<div class="row show-grid">
+			<!-- ko foreach: ko.utils.range(1, $root.activeLevel().columns) -->
+				<div class="span1" data-bind="attr: {title:$index() + '-' + $parentContext.$index()}, style:{backgroundColor:$root.colors[$root.getCellPathAt($index(), $parentContext.$index())]}"><select data-bind="options: $root.possiblePathIds,
+				optionsText: function(item) { 
+                    return $root.possiblePathIdsABC[item];
+                },
+				 value: $root.getCellPathAt($index(), $parentContext.$index()), event: {change: function($data,  $event){$root.levelChangeCell($event, $index(), $parentContext.$index())}}"/></div>
+			<!-- /ko -->
+		</div>
+	<!-- /ko -->
+	</div>
+</script>
+</html>
+
+

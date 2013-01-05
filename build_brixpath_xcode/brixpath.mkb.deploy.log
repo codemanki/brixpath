@@ -1,0 +1,441 @@
+Marmalade Makefile Builder v6.1.1 [326649]
+
+Copyright (C) 2001-2012 Marmalade.
+
+Building project: /Users/codemanki/projects/blackberry/brixpath/brixpath.mkb
+
+setting root dir: /Users/codemanki/projects/blackberry
+
+--use_temp_extension option set, reading from: /Users/codemanki/projects/blackberry/brixpath/brixpath.mkbtemp
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iwgx'
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iwgeom'
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iwutil'
+
+package is deprecated
+
+adding package reference: /Users/codemanki/.local/share/marmalade/packages/6.1.1/libjpeg_6b
+
+loading mkf: [/Users/codemanki/.local/share/marmalade/packages/6.1.1/libjpeg_6b] 'libjpeg'
+
+adding package reference: /Users/codemanki/.local/share/marmalade/packages/6.1.1/libpng_1.2.34
+
+loading mkf: [/Users/codemanki/.local/share/marmalade/packages/6.1.1/libpng_1.2.34] 'libpng'
+
+package is deprecated
+
+adding package reference: /Users/codemanki/.local/share/marmalade/packages/6.1.1/zlib_1.2.4
+
+loading mkf: [/Users/codemanki/.local/share/marmalade/packages/6.1.1/zlib_1.2.4] 'zlib'
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iwresmanager'
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iwgl'
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iw2d'
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iwgxfont'
+
+package is deprecated
+
+adding package reference: /Users/codemanki/.local/share/marmalade/packages/6.1.1/tiniconv_1.0.1
+
+loading mkf: [/Users/codemanki/.local/share/marmalade/packages/6.1.1/tiniconv_1.0.1] 'tiniconv'
+
+Detected Xcode Version: 4.5.1
+
+using build directory 'build_brixpath_xcode'
+
+adding PATH: /Applications/Xcode.app/Contents/Developer/usr/bin
+
+adding PATH: /opt/local/bin
+
+using gcc_x86 toolchain: gcc []
+
+adding PATH: /Developer/Marmalade/6.1/s3e/gcc/darwin/bin
+
+using gcc toolchain: arm-none-eabi-gcc []
+
+found app.icf in data dir
+
+adding PATH: /Developer/Marmalade/6.1/s3e/bin
+
+--use_temp_extension option set, writing to: deploy_config.temp.py
+
+Wrote file 'deploy_config.temp.py'.
+
+Wrote file 'linker_script'.
+
+Wrote file 'build/Debug.via'.
+
+Wrote file 'build/Release.via'.
+
+Wrote file 'build/Debug ARM.via'.
+
+Wrote file 'build/Release ARM.via'.
+
+done
+
+Doing: "Package and Install" on Configuration Default to playbook
+
+Passing the following arguments to s3e_deploy: ['/Developer/Marmalade/6.1/s3e/bin/s3e_deploy', '-n', '--os', 'playbook', '--arch', 'arm', '--gcc', '--to-device', '/Users/codemanki/projects/blackberry/brixpath/build_brixpath_xcode/deploy_temp.py', '192.168.1.101', '13560']
+
+running s3e_deploy commandline: /Developer/Marmalade/6.1/s3e/bin/s3e_deploy -n --os playbook --arch arm --gcc --to-device /Users/codemanki/projects/blackberry/brixpath/build_brixpath_xcode/deploy_temp.py 192.168.1.101 13560
+
+CWD=/Users/codemanki/projects/blackberry/brixpath/build_brixpath_xcode
+
+Marmalade Deployment Tool v1.3
+
+Copyright (C) 2001-2012 Marmalade
+
+deploying brixpath [1.1.3] [arm-release] for 'playbook' to folder: 'deployments/default/playbook/release/intermediate_files'
+
+--> copying files ...
+
+generating temporary keypair: /Users/codemanki/temp_s3e_key.txt
+
+ [execute] openssl
+
+--> updating s3e binary: compression=lzma signing=1 config-embedding=1
+
+ [execute] s3e_mod
+
+--> performing custom deployment steps for: 'playbook'
+
+Reading public key from /Users/codemanki/temp_s3e_key.txt ...
+
+public key embedded in loader
+
+creating .bar package: deployments/default/playbook/release/brixpath.bar
+
+deploying unsigned development build
+
+SUCCESS: EVALUATION USE ONLY package written to '/Users/codemanki/projects/blackberry/brixpath/build_brixpath_xcode/deployments/default/playbook/release' [took 3.09s]. This package is not licensed for commercial use
+
+--> deploying to device from: deployments/default/playbook/release
+
+ [execute] blackberry-deploy
+
+SUCCESS: S3E package deployed to device [took 25.19s]
+
+
+Marmalade Makefile Builder v6.1.1 [326649]
+
+Copyright (C) 2001-2012 Marmalade.
+
+Building project: /Users/codemanki/projects/blackberry/brixpath/brixpath.mkb
+
+setting root dir: /Users/codemanki/projects/blackberry
+
+--use_temp_extension option set, reading from: /Users/codemanki/projects/blackberry/brixpath/brixpath.mkbtemp
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iwgx'
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iwgeom'
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iwutil'
+
+package is deprecated
+
+adding package reference: /Users/codemanki/.local/share/marmalade/packages/6.1.1/libjpeg_6b
+
+loading mkf: [/Users/codemanki/.local/share/marmalade/packages/6.1.1/libjpeg_6b] 'libjpeg'
+
+adding package reference: /Users/codemanki/.local/share/marmalade/packages/6.1.1/libpng_1.2.34
+
+loading mkf: [/Users/codemanki/.local/share/marmalade/packages/6.1.1/libpng_1.2.34] 'libpng'
+
+package is deprecated
+
+adding package reference: /Users/codemanki/.local/share/marmalade/packages/6.1.1/zlib_1.2.4
+
+loading mkf: [/Users/codemanki/.local/share/marmalade/packages/6.1.1/zlib_1.2.4] 'zlib'
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iwresmanager'
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iwgl'
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iw2d'
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iwgxfont'
+
+package is deprecated
+
+adding package reference: /Users/codemanki/.local/share/marmalade/packages/6.1.1/tiniconv_1.0.1
+
+loading mkf: [/Users/codemanki/.local/share/marmalade/packages/6.1.1/tiniconv_1.0.1] 'tiniconv'
+
+Detected Xcode Version: 4.5.1
+
+using build directory 'build_brixpath_xcode'
+
+adding PATH: /Applications/Xcode.app/Contents/Developer/usr/bin
+
+adding PATH: /opt/local/bin
+
+using gcc_x86 toolchain: gcc []
+
+adding PATH: /Developer/Marmalade/6.1/s3e/gcc/darwin/bin
+
+using gcc toolchain: arm-none-eabi-gcc []
+
+found app.icf in data dir
+
+adding PATH: /Developer/Marmalade/6.1/s3e/bin
+
+--use_temp_extension option set, writing to: deploy_config.temp.py
+
+Wrote file 'deploy_config.temp.py'.
+
+Wrote file 'linker_script'.
+
+Wrote file 'build/Debug.via'.
+
+Wrote file 'build/Release.via'.
+
+Wrote file 'build/Debug ARM.via'.
+
+Wrote file 'build/Release ARM.via'.
+
+done
+
+Doing: "Package and Install" on Configuration Default to playbook
+
+Passing the following arguments to s3e_deploy: ['/Developer/Marmalade/6.1/s3e/bin/s3e_deploy', '-n', '--os', 'playbook', '--arch', 'arm', '--gcc', '--to-device', '/Users/codemanki/projects/blackberry/brixpath/build_brixpath_xcode/deploy_temp.py', '192.168.1.101', '13560']
+
+running s3e_deploy commandline: /Developer/Marmalade/6.1/s3e/bin/s3e_deploy -n --os playbook --arch arm --gcc --to-device /Users/codemanki/projects/blackberry/brixpath/build_brixpath_xcode/deploy_temp.py 192.168.1.101 13560
+
+CWD=/Users/codemanki/projects/blackberry/brixpath/build_brixpath_xcode
+
+Marmalade Deployment Tool v1.3
+
+Copyright (C) 2001-2012 Marmalade
+
+deploying brixpath [1.1.3] [arm-release] for 'playbook' to folder: 'deployments/default/playbook/release/intermediate_files'
+
+--> copying files ...
+
+generating temporary keypair: /Users/codemanki/temp_s3e_key.txt
+
+ [execute] openssl
+
+--> updating s3e binary: compression=lzma signing=1 config-embedding=1
+
+ [execute] s3e_mod
+
+--> performing custom deployment steps for: 'playbook'
+
+Reading public key from /Users/codemanki/temp_s3e_key.txt ...
+
+public key embedded in loader
+
+creating .bar package: deployments/default/playbook/release/brixpath.bar
+
+deploying unsigned development build
+
+SUCCESS: EVALUATION USE ONLY package written to '/Users/codemanki/projects/blackberry/brixpath/build_brixpath_xcode/deployments/default/playbook/release' [took 0.71s]. This package is not licensed for commercial use
+
+--> deploying to device from: deployments/default/playbook/release
+
+ [execute] blackberry-deploy
+
+SUCCESS: S3E package deployed to device [took 6.30s]
+
+
+Marmalade Makefile Builder v6.1.1 [326649]
+
+Copyright (C) 2001-2012 Marmalade.
+
+Building project: /Users/codemanki/projects/blackberry/brixpath/brixpath.mkb
+
+setting root dir: /Users/codemanki/projects/blackberry
+
+--use_temp_extension option set, reading from: /Users/codemanki/projects/blackberry/brixpath/brixpath.mkbtemp
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iwgx'
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iwgeom'
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iwutil'
+
+package is deprecated
+
+adding package reference: /Users/codemanki/.local/share/marmalade/packages/6.1.1/libjpeg_6b
+
+loading mkf: [/Users/codemanki/.local/share/marmalade/packages/6.1.1/libjpeg_6b] 'libjpeg'
+
+adding package reference: /Users/codemanki/.local/share/marmalade/packages/6.1.1/libpng_1.2.34
+
+loading mkf: [/Users/codemanki/.local/share/marmalade/packages/6.1.1/libpng_1.2.34] 'libpng'
+
+package is deprecated
+
+adding package reference: /Users/codemanki/.local/share/marmalade/packages/6.1.1/zlib_1.2.4
+
+loading mkf: [/Users/codemanki/.local/share/marmalade/packages/6.1.1/zlib_1.2.4] 'zlib'
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iwresmanager'
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iwgl'
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iw2d'
+
+loading mkf: [/Developer/Marmalade/6.1/modules] 'iwgxfont'
+
+package is deprecated
+
+adding package reference: /Users/codemanki/.local/share/marmalade/packages/6.1.1/tiniconv_1.0.1
+
+loading mkf: [/Users/codemanki/.local/share/marmalade/packages/6.1.1/tiniconv_1.0.1] 'tiniconv'
+
+Detected Xcode Version: 4.5.1
+
+using build directory 'build_brixpath_xcode'
+
+adding PATH: /Applications/Xcode.app/Contents/Developer/usr/bin
+
+adding PATH: /opt/local/bin
+
+using gcc_x86 toolchain: gcc []
+
+adding PATH: /Developer/Marmalade/6.1/s3e/gcc/darwin/bin
+
+using gcc toolchain: arm-none-eabi-gcc []
+
+found app.icf in data dir
+
+adding PATH: /Developer/Marmalade/6.1/s3e/bin
+
+--use_temp_extension option set, writing to: deploy_config.temp.py
+
+Wrote file 'deploy_config.temp.py'.
+
+Wrote file 'linker_script'.
+
+Wrote file 'build/Debug.via'.
+
+Wrote file 'build/Release.via'.
+
+Wrote file 'build/Debug ARM.via'.
+
+Wrote file 'build/Release ARM.via'.
+
+done
+
+Doing: "Package" on Configuration Default to playbook
+
+running s3e_deploy commandline: /Developer/Marmalade/6.1/s3e/bin/s3e_deploy -n --os playbook --arch arm --gcc /Users/codemanki/projects/blackberry/brixpath/build_brixpath_xcode/deploy_temp.py
+
+CWD=/Users/codemanki/projects/blackberry/brixpath/build_brixpath_xcode
+
+Marmalade Deployment Tool v1.3
+
+Copyright (C) 2001-2012 Marmalade
+
+deploying brixpath [1.1.3] [arm-release] for 'playbook' to folder: 'deployments/default/playbook/release/intermediate_files'
+
+--> copying files ...
+
+generating temporary keypair: /Users/codemanki/temp_s3e_key.txt
+
+ [execute] openssl
+
+--> updating s3e binary: compression=lzma signing=1 config-embedding=1
+
+ [execute] s3e_mod
+
+--> performing custom deployment steps for: 'playbook'
+
+Reading public key from /Users/codemanki/temp_s3e_key.txt ...
+
+public key embedded in loader
+
+creating .bar package: deployments/default/playbook/release/brixpath.bar
+
+signing app for distribution using keystore
+
+ [execute] blackberry-signer
+
+SUCCESS: EVALUATION USE ONLY package written to '/Users/codemanki/projects/blackberry/brixpath/build_brixpath_xcode/deployments/default/playbook/release' [took 1.99s]. This package is not licensed for commercial use
+
+
+Marmalade Makefile Builder v6.1.1 [326649]
+
+Copyright (C) 2001-2012 Marmalade.
+
+Building project: /Users/codemanki/projects/blackberry/brixpath/brixpath.mkb
+
+setting root dir: /Users/codemanki/projects/blackberry
+
+--use_temp_extension option set, reading from: /Users/codemanki/projects/blackberry/brixpath/brixpath.mkbtemp
+
+/Users/codemanki/projects/blackberry/brixpath/brixpath.mkbtemp(27) : warning: unable to find file(s) logger.h in path(s):
+
+  /Users/codemanki/projects/blackberry/brixpath/source
+
+/Users/codemanki/projects/blackberry/brixpath/brixpath.mkbtemp(27) : error: Unable to find file logger.h in path(s):
+
+  /Users/codemanki/projects/blackberry/brixpath/source
+
+FAILED (error code=2)
+
+Press enter to continue...
+
+Marmalade Makefile Builder v6.1.1 [326649]
+
+Copyright (C) 2001-2012 Marmalade.
+
+Building project: /Users/codemanki/projects/blackberry/brixpath/brixpath.mkb
+
+setting root dir: /Users/codemanki/projects/blackberry
+
+--use_temp_extension option set, reading from: /Users/codemanki/projects/blackberry/brixpath/brixpath.mkbtemp
+
+/Users/codemanki/projects/blackberry/brixpath/brixpath.mkbtemp(27) : warning: unable to find file(s) logger.h in path(s):
+
+  /Users/codemanki/projects/blackberry/brixpath/source
+
+/Users/codemanki/projects/blackberry/brixpath/brixpath.mkbtemp(27) : error: Unable to find file logger.h in path(s):
+
+  /Users/codemanki/projects/blackberry/brixpath/source
+
+FAILED (error code=2)
+
+Press enter to continue...
+
+Doing: "Package" on Configuration Default to playbook
+
+running s3e_deploy commandline: /Developer/Marmalade/6.1/s3e/bin/s3e_deploy -n --os playbook --arch arm --gcc /Users/codemanki/projects/blackberry/brixpath/build_brixpath_xcode/deploy_temp.py
+
+CWD=/Users/codemanki/projects/blackberry/brixpath/build_brixpath_xcode
+
+Marmalade Deployment Tool v1.3
+
+Copyright (C) 2001-2012 Marmalade
+
+deploying brixpath [0.0.1] [arm-release] for 'playbook' to folder: 'deployments/default/playbook/release/intermediate_files'
+
+--> copying files ...
+
+generating temporary keypair: /Users/codemanki/temp_s3e_key.txt
+
+ [execute] openssl
+
+--> updating s3e binary: compression=lzma signing=1 config-embedding=1
+
+ [execute] s3e_mod
+
+--> performing custom deployment steps for: 'playbook'
+
+Reading public key from /Users/codemanki/temp_s3e_key.txt ...
+
+public key embedded in loader
+
+creating .bar package: deployments/default/playbook/release/brixpath.bar
+
+deploying unsigned development build
+SUCCESS: Package written to '/Users/codemanki/projects/blackberry/brixpath/build_brixpath_xcode/deployments/default/playbook/release' [took 3.76s]
+
+
